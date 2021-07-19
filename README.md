@@ -20,5 +20,5 @@ pip3 install -r requirements.txt
 ## Run the API
 1. From the root directory run `python3 -m api.py` to host the api.
 2. You can test out the working of the API using POSTMAN
-![alt text](postman.png)
+![alt text](postman_new.png)
  

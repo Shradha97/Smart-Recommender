@@ -3,12 +3,12 @@ import pandas as pd
 
 
 class TimeSlotInsightEngine:
-    def time_slot_insights(self, booking_trends_df, search_trends_df, category):
+    def time_slot_insights(self, booking_trends_df, search_trends_df):
         # for category in category_list:
-        ranked_time_slot_insights_df = self.get_area_between_trends(booking_trends_df, search_trends_df, category)
+        ranked_time_slot_insights_df = self.get_area_between_trends(booking_trends_df, search_trends_df)
         return ranked_time_slot_insights_df
 
-    def get_area_between_trends(self, booking_trends_df, search_trends_df, category):
+    def get_area_between_trends(self, booking_trends_df, search_trends_df):
         demand_supply_gap_approx = []
         categories = search_trends_df['Category'].unique()
         print(categories)

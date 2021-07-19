@@ -18,8 +18,7 @@ class TimeSlotInsightManager:
 
         # get ranked time slot insights
         time_slot_insights = self.time_slot_insight_engine.time_slot_insights(booking_trends_df,
-                                                                              search_trends_df,
-                                                                              category)
+                                                                              search_trends_df)
         time_slot_insights.insert(0, 'Studio_Id', studio_id)
 
         # converting results to json
